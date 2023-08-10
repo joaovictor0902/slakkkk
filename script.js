@@ -16,15 +16,6 @@ function moveButtonRandomly() {
     noButton.style.top = `${randomY}px`;
 }
 
-yesButton.addEventListener("click", () => {
-    messageText.textContent = "RapaizKKKKKKKKKKKKKKKKKKKKKK";
-    messageContainer.style.display = "block";
-    setTimeout(() => {
-        messageContainer.style.display = "none";
-        messageText.textContent = "";
-    }, 120000);
-});
-
 noButton.addEventListener("mouseover", moveButtonRandomly);
 
 noButton.addEventListener("click", () => {
@@ -32,7 +23,7 @@ noButton.addEventListener("click", () => {
 });
 
 yesButton.addEventListener("click", () => {
-    messageText.textContent = "Obrigado baby hehehehehe";
+    messageText.textContent = "Rapaiz ksksksksksksksksksks";
     messageContainer.style.display = "block";
 
 

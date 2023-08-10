@@ -3,6 +3,19 @@ const noButton = document.getElementById("noButton");
 const messageContainer = document.getElementById("messageContainer");
 const messageText = document.getElementById("messageText");
 
+function moveButtonRandomly() {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    const maxX = windowWidth - 70; // Width of the button
+    const maxY = windowHeight - 70; // Height of the button
+
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
+}
+
 yesButton.addEventListener("click", () => {
     messageText.textContent = "RapaizKKKKKKKKKKKKKKKKKKKKKK";
     messageContainer.style.display = "block";
@@ -16,9 +29,12 @@ noButton.addEventListener("mouseover", () => {
     noButton.classList.add("random");
 });
 
-noButton.addEventListener("mouseout", () => {
-    noButton.classList.remove("random");
+noButton.addEventListener("mouseover", moveButtonRandomly);
+
+noButton.addEventListener("click", () => {
+    moveButtonRandomly(); // Move the button when clicked
 });
+
 yesButton.addEventListener("click", () => {
     messageText.textContent = "Obrigado baby hehehehehe";
     messageContainer.style.display = "block";

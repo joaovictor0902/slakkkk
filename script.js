@@ -4,12 +4,12 @@ const messageContainer = document.getElementById("messageContainer");
 const messageText = document.getElementById("messageText");
 
 yesButton.addEventListener("click", () => {
-    messageText.textContent = "Obrigado baby hehehehehe";
+    messageText.textContent = "RapaizKKKKKKKKKKKKKKKKKKKKKK";
     messageContainer.style.display = "block";
     setTimeout(() => {
         messageContainer.style.display = "none";
         messageText.textContent = "";
-    }, 9999999999);
+    }, 120000);
 });
 
 noButton.addEventListener("mouseover", () => {
@@ -43,5 +43,5 @@ yesButton.addEventListener("click", () => {
         messageText.textContent = "";
         // Remover o elemento de vídeo após um certo tempo (opcional)
         messageContainer.removeChild(videoElement);
-    }, 9999999999);
+    }, 120000);
 });
